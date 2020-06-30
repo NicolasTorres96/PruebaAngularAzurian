@@ -1,0 +1,57 @@
+<div class="card">
+    <h1 class="card-title text-center pt-3">Table</h1>
+    <div class="row">
+        <div class="card col-11 mx-auto">
+            <h4 class="card-title pt-2">Users</h4>
+            <div class="table-responsive tableFixHead border mb-3" style="max-height: 380px !important; min-height:380px;">
+                <table class="table table-bordered">
+                    <thead class="thead-inverse">
+                        <tr style="font-size: small;">
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Username</th>
+                            <th>Select User</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of users">
+                            <td>{{item.name}}</td>
+                            <td>{{item.age}}</td>
+                            <td>{{item.username}}</td>
+                            <td><i (click)="Select(item)" class="mdi mdi-search-web" style="cursor: pointer;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mb-2">
+                <div class="mt-2">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-5">
+                    <input [(ngModel)]="actualUser.name" type="text" name="name" class="form-control">
+                </div>
+                <div class="mt-2">
+                    <label for="age">Age</label>
+                </div>
+                <div class="col-1">
+                    <input [(ngModel)]="actualUser.age" type="text" name="age" class="form-control">
+                </div>
+                <div class="mt-2">
+                    <label for="username">User Name</label>
+                </div>
+                <div class="col-4">
+                    <input [(ngModel)]="actualUser.username" type="text" name="username" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="row">
+                        <button (click)="Create()" class="btn btn-primary mx-auto mb-4">Create</button>
+                        <button (click)="Update()" class="btn btn-primary mx-auto mb-4">Update</button>
+                        <button (click)="Delete()" class="btn btn-primary mx-auto mb-4">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
