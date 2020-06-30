@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Tecnologias Usadas
+
+Angular 10, node 14.4.0, Bootstrap 4, TypeScript 3.9.5
+
+## Instalacion de Angular
+
+luego de descargar el git abrimos la carpeta contenedora de la aplicacion Angular y en la Terminal(Ctrl+Shif+ñ) ejecutamos el comando npm install para recrear los módulos de node y las demás dependencias.
